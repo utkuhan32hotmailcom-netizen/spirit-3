@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tüm Etkinlikler</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/2311012074.css">
+  <script type="module" src="js/event-list.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Tüm Etkinlikler</h1>
+    <p class="alt-baslik">Ekim ayında kampüste düzenlenen etkinlikler.</p>
+    <nav>
+      <a href="index.html">Ana Sayfa</a>
+      <a href="etkinlikler.html" aria-current="page">Etkinlikler</a>
+      <a href="etkinlik-ekle.html">Ekle</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="filtre-formu" class="filtre">
+      <div>
+        <label for="arama">Etkinlik ara</label>
+        <input type="search" id="arama" placeholder="Örn. atölye, kariyer">
+      </div>
+      <div>
+        <label for="kategori-filtre">Kategori</label>
+        <select id="kategori-filtre">
+          <option value="">Tümü</option>
+        </select>
+      </div>
+    </form>
+    <p id="sonuc" aria-live="polite"></p>
+
+    <section id="etkinlik-listesi" class="etkinlik-listesi"></section>
+    <noscript><p>Etkinlikleri görmek için JavaScript açık olmalı.</p></noscript>
+  </main>
+
+  <footer>
+    <p>utku erdoğan 2311012074</p>
+  </footer>
+</body>
+</html>
